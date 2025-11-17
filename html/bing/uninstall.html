@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script
+			src="https://js.sentry-cdn.com/ff16fafd38cbcb2689ee4ff3031fc8d9.min.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="/js/sentrySiteProperties.js"></script>
+		<script src="/sharedfiles-atom/js/sentryErrorHandling.js"></script>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Uninstall</title>
+		<link
+			rel="icon"
+			type="image/x-icon"
+			href="/favicon.svg"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Inter&display=swap"
+			rel="stylesheet"
+		/>
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+			}
+			ul {
+				list-style: none;
+			}
+			a {
+				text-decoration: none;
+			}
+			.wrapper {
+				font-family: 'Roboto', Arial, Helvetica, sans-serif;
+				font-weight: 400;
+				color: #000;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				min-height: 100vh;
+			}
+			.grid {
+				position: relative;
+				max-width: 840px;
+				padding: 0 10px;
+				margin: 0 auto;
+			}
+			.banner {
+				padding-top: 65px;
+				padding-bottom: 70px;
+				position: relative;
+			}
+			.banner-bg {
+				position: absolute;
+				top: 0;
+				right: 0;
+				left: 0;
+				background: #f8fbff;
+				height: 100%;
+			}
+			.banner h1 {
+				font-size: 40px;
+				font-weight: 700;
+				line-height: 1.2;
+				margin-bottom: 23px;
+			}
+			.cont-wrap {
+				width: 100%;
+				padding: 30px;
+				border-radius: 20px;
+				background: #fff;
+				box-shadow: 4px 4px 20px 0 rgba(0, 0, 0, 0.15);
+				margin-bottom: 20px;
+			}
+			.cont-wrap h2 {
+				color: #132659;
+				font-size: 32px;
+				font-weight: 500;
+				line-height: 40px;
+				margin-bottom: 30px;
+			}
+			ol {
+				padding-left: 17px;
+			}
+			ol li {
+				color: #132659;
+				font-size: 16px;
+				letter-spacing: 0.3px;
+				margin-bottom: 15px;
+			}
+			ol li:last-child {
+				margin-bottom: 20px;
+			}
+			.un-desc {
+				color: #132659;
+				font-size: 16px;
+				line-height: 24px;
+				max-width: 760px;
+				margin: 0 auto;
+			}
+			.un-desc2 {
+				color: #132659;
+				font-size: 14px;
+				line-height: 24px;
+				max-width: 760px;
+				margin: 0 auto;
+			}
+			.wrapper footer {
+				padding: 30px 10px;
+			}
+			.wrapper footer ul {
+				display: flex;
+				justify-content: center;
+				gap: 32px;
+			}
+			.wrapper footer ul li a {
+				font-family: 'Inter';
+				font-weight: 400;
+				font-size: 12px;
+				line-height: 18px;
+				text-transform: capitalize;
+				color: #4f5b67;
+			}
+			.wrapper footer ul li a:hover {
+				text-decoration: underline;
+			}
+			a.mail-text {
+				font-size: inherit;
+				color: #136adc;
+			}
+			a.mail-text:hover {
+				text-decoration: underline;
+			}
+			.separator {
+				margin: 30px 0;
+				border-top: 1px solid #d0d4de;
+			}
+			sup {
+				vertical-align: baseline;
+				color: inherit;
+				font-size: inherit;
+				font-weight: inherit;
+				font-family: inherit;
+			}
+			@media only screen and (max-width: 700px) {
+				.banner {
+					padding-top: 30px;
+				}
+				.banner h1 {
+					font-size: 20px;
+					margin-bottom: 15px;
+				}
+				.cont-wrap {
+					padding: 15px;
+				}
+
+				.cont-wrap h2 {
+					color: #132659;
+					font-size: 20px;
+					font-weight: 500;
+					line-height: 28px;
+					margin-bottom: 15px;
+				}
+				.un-desc {
+					font-size: 14px;
+				}
+				.un-desc2 {
+					font-size: 12px;
+				}
+				.wrapper footer ul {
+					flex-wrap: wrap;
+					justify-content: unset;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<section class="banner">
+				<div class="banner-bg"></div>
+				<div class="grid">
+					<h1>Uninstall</h1>
+					<div class="cont-wrap">
+						<div class="Firefox">
+							<h2>Follow the instructions below to uninstall the software from your Firefox browser</h2>
+							<ol>
+								<li>Open the browser</li>
+								<li>Click on the gray menu bar on the top right corner</li>
+								<li>Select 'Add-ons and Themes' to open the 'Add-ons Manager'</li>
+								<li>
+									Select the ‘Settings’ option from the drop-down menu and look for ‘Extensions’ option. Remove the add-on that you wish to uninstall
+								</li>
+								<li>Select the option to Remove the particular extension</li>
+								<li>Select the toggle button to disable instead of removing the extension.</li>
+							</ol>
+							<p class="un-desc2">
+								Disclaimer: Firefox is a trademark of the Mozilla Foundation in the U.S. and other countries. Use of it here does not imply any
+								affiliation with or endorsement by Mozilla Foundation
+							</p>
+						</div>
+						<hr class="separator" />
+						<div class="chrome">
+							<h2>Follow the instructions below to uninstall the extension from your Chrome<sup>&trade;</sup> browser</h2>
+							<ol>
+								<li>Open your Chrome<sup>&trade;</sup> browser</li>
+								<li>To access the Settings menu, click the three horizontal lines or three dots in the top right corner of the browser</li>
+								<li>From the drop-down menu navigate to Extensions> Manage Extensions</li>
+								<li>
+									Locate the extension you want to remove and click ‘Remove’. To hide the extension without removing it, unselect the toggle button
+								</li>
+								<li>Restart your Chrome<sup>&trade;</sup> browser</li>
+							</ol>
+							<p class="un-desc2">
+								Disclaimer: Chrome is a trademark of Google LLC. Use of it here does not imply any affiliation with or endorsement by Google LLC.
+							</p>
+						</div>
+					</div>
+					<p class="un-desc">
+						* Note: After you have uninstalled the software, certain data such as folders, files, registry keys, and cookies, may remain on your
+						computer. We recommend that you clear your cookies after uninstalling. If for any reason you are having difficulties uninstalling your
+						software, please reach us via email at
+						<a
+							href="mailto:helpdesk@atomapplications.com"
+							class="mail-text"
+							><img
+								src="/sharedfiles-atom/images/mail-address.png"
+								style="vertical-align: middle"
+								alt="helpdesk@atomapplications.com"
+						/></a>
+					</p>
+				</div>
+			</section>
+			<footer>
+				<ul>
+					<li>
+						<a href="/privacypolicy">Privacy Policy</a>
+					</li>
+					<li>
+						<a href="/termsofservice">Terms of Service</a>
+					</li>
+					<li>
+						<a href="/contactus">Contact Us</a>
+					</li>
+					<li>
+						<a href="/uninstall">Uninstall</a>
+					</li>
+					<li>
+						<a href="/datapreferences">Do Not Share My Personal Information</a>
+					</li>
+				</ul>
+			</footer>
+		</div>
+	</body>
+</html>
