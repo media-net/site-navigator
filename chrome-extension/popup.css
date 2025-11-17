@@ -49,20 +49,23 @@ html {
 }
 
 body {
-    width: 442px;
+    width: 402px;
     padding: 0 20px;
     min-height: 582px;
     font-family: 'Roboto', sans-serif;
     color: #333;
 }
 
+.container { padding-top: 20px; }
 header {
     height: 38px;
-    padding-top: 20px;
-    padding-bottom: 12px;
+    margin-bottom: 12px;
     text-align: center;
 }
 
+header .logo {
+    height: 38px;
+}
 header h1 {
     color: white;
     font-size: 24px;
