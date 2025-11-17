@@ -1,0 +1,225 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+    border: 1px solid #F0F0F0;
+    background: #FFF;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.12);
+}
+
+body {
+    width: 442px;
+    padding: 0 20px;
+    min-height: 582px;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+header {
+    height: 38px;
+    padding-top: 20px;
+    padding-bottom: 12px;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.toggle {
+	cursor: pointer;
+	display: inline-block;
+}
+.toggle-switch {
+	display: inline-block;
+	border-radius: 9999px;
+    background: #A6B7C3;
+	border-radius: 16px;
+	width: 44px;
+	height: 24px;
+	position: relative;
+	vertical-align: middle;
+	transition: background 0.25s;
+	&:before,
+	&:after {
+		content: "";
+	}
+	&:before {
+		display: block;
+		background: linear-gradient(to bottom, #fff 0%,#eee 100%);
+		border-radius: 50%;
+		width: 20px;
+		height: 20px;
+		position: absolute;
+		top: 2px;
+		left: 2px;
+		transition: left 0.25s;
+	}
+	
+	.toggle-checkbox:checked + & {
+		border-radius: 9999px;
+        background: radial-gradient(77.27% 259.72% at 29.55% 62.5%, #256CF1 0%, #11357C 100%);
+
+		&:before {
+			left: 22px;
+		}
+	}
+}
+.toggle-checkbox {
+	position: absolute;
+	visibility: hidden;
+}
+.toggle-label {
+	margin-left: 5px;
+	position: relative;
+	top: 2px;
+}
+
+.content .enable-btn {
+    padding: 15px 23px;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    background: radial-gradient(40.64% 80.32% at 26.07% 50.32%, #FFFBF3 0%, #EAF6FF 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.content .enable-btn p {
+    color: #1C3769;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.instructions {
+    height: 318px;
+    padding: 18px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background: radial-gradient(106.98% 68.18% at 25% 50%, #FFFBF3 0%, #EAF6FF 100%);
+}
+
+.instructions h1 {
+    margin-bottom: 20px;
+    color: #1C3769;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.instructions ul {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.instructions ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.instructions ul li .steps-info h2 {
+    margin-bottom: 2px;
+    color: #1C3769;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+.instructions ul li .steps-info p {
+    color: #4C5C7A;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+}
+
+footer .wrap p {
+    padding: 0 14px;
+    margin-bottom: 12px;
+    color: #585858;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 160% */
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 14px;
+}
+
+footer ul li a {
+    color: #585858;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
