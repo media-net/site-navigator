@@ -1,0 +1,9 @@
+service: sitenavigator
+runtime: nodejs22
+default_expiration: '1s'
+env_variables:
+  RATELIMIT_REQ_COUNT: 500
+  FEEDBACK_EMAIL: 'helpdesk@atomapplications.com'
+  FEEDBACK_PASS: 'nashooqsvxwtfiyj'
+  FEEDBACK_SUBJECT: 'Uninstall Feedback - Site Navigator'
+  FEEDBACK_TARGET_EMAIL: 'helpdesk@atomapplications.com'

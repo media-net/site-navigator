@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Private Search Mode</title>
+		<link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon">
+		<!-- Google Tag Manager -->
+		<!-- <script>
+			var gtm = $$$$;
+			const urlParams = new URLSearchParams(window.location.search);
+			const isTest = urlParams.has('test');
+			gtm = gtm || isTest;
+			if (gtm) {
+				(function (w, d, s, l, i) {
+					w[l] = w[l] || [];
+					w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+					var f = d.getElementsByTagName(s)[0],
+						j = d.createElement(s),
+						dl = l != 'dataLayer' ? '&l=' + l : '';
+					j.async = true;
+					j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+					f.parentNode.insertBefore(j, f);
+				})(window, document, 'script', 'dataLayer', 'GTM-NVS4BLWT');
+			}
+		</script> -->
+		<!-- End Google Tag Manager -->
+		<img
+			id="trackingPixel"
+			alt="Tracking Pixel"
+			style="display: none"
+		/>
+	</head>
+	<body>
+		<!-- Google Tag Manager (noscript) -->
+		<!-- <noscript
+			><iframe
+				src="https://www.googletagmanager.com/ns.html?id=GTM-NVS4BLWT"
+				height="0"
+				width="0"
+				style="display: none; visibility: hidden"
+			></iframe
+		></noscript> -->
+		<script src="./js/browser-detect.js"></script>
+		<script src="./js/mixpanelSiteProperties.js"></script>
+		<script src="./js/eventTracking.js"></script>
+		<!-- Convert Experiences code-->
+		<!-- <script
+			type="text/javascript"
+			src="//cdn-4.convertexperiments.com/js/10043404-10045055.js"
+		></script> -->
+		<!-- End Google Tag Manager (noscript) -->
+		<script>
+			mixpanelTrack('UserLanderVisit');
+			// gtmTrack('landing_impression');
+			// setBrowserClass();
+		</script>
+		<div id="app"></div>
+		<div class="firefoxlander">
+			<a
+				class="cta-button"
+				id="checkCta"
+				style="display: none"
+				>Continue</a
+			>
+		</div>
+		<script src="./spa.js"></script>
+	</body>
+</html>
