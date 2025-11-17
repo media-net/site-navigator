@@ -1,0 +1,1 @@
+const sentryDsn = 'https://10048ed83713ce931381f130acfa7fc0@o4505877879980032.ingest.sentry.io/4505941662957568';
