@@ -7,23 +7,25 @@
     "default_popup": "index.html",
     "default_title": "Site Navigator"
   },
-  "permissions": [
-    "storage"
-  ],
-  "host_permissions": [
-    "*://*.google.com/*"
-  ],
+  "permissions": ["storage", "declarativeNetRequestWithHostAccess"],
+  "host_permissions": ["*://sitenavigator.co/*"],
   "background": {
     "service_worker": "background.js"
   },
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["content.js"],
-      "run_at": "document_idle"
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "Site Navigator",
+      "keyword": "Site Navigator",
+      "favicon_url": "https://sitenavigator.co/favicon.png",
+      "search_url": "https://sitenavigator.co/search/rd/results?q={searchTerms}",
+      "encoding": "UTF-8",
+      "is_default": true
     }
-  ],
+  },
   "icons": {
     "48": "/images/favicon.png"
+  },
+  "externally_connectable": {
+    "matches": ["*://sitenavigator.co/*"]
   }
 }
