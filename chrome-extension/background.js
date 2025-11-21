@@ -1,6 +1,3 @@
-importScripts("../StorageHandler.js", "../constants.js")
-
-
 chrome.declarativeNetRequest.updateDynamicRules({
     addRules: [{
         "priority": 10,

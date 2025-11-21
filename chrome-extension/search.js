@@ -11,7 +11,7 @@ async function init() {
     // Helper function: Redirect to selected search engine
     const redirectToSearch = async () => {
         const queryData = getQueryData();
-        window.location.href = "https://sitenavigator.co/search/rd/results?q=" + encodeURIComponent(queryData);
+        window.location.href = "https://sitenavigator.co/search/results?q=" + encodeURIComponent(queryData);
     };
 
     // Main logic
