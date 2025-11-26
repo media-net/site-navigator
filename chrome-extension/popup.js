@@ -1,55 +1,43 @@
-// Popup script for Site Navigator extension
-
 document.addEventListener('DOMContentLoaded', function() {
-    const actionBtn = document.getElementById('actionBtn');
-    const messageDiv = document.getElementById('message');
+    const toggleCheckbox = document.querySelector('.toggle-checkbox');
 
-    // Button click handler
-    actionBtn.addEventListener('click', function() {
-        showMessage('Button clicked successfully!', 'success');
-        
-        // Send message to background script
-        chrome.runtime.sendMessage(
-            { action: 'buttonClicked', timestamp: Date.now() },
-            function(response) {
-                if (response && response.status === 'success') {
-                    console.log('Message sent to background script');
+    loadFeatureState();
+
+    if (toggleCheckbox) {
+        toggleCheckbox.addEventListener('change', function() {
+            const isEnabled = toggleCheckbox.checked;
+            console.log('Feature toggled:', isEnabled);
+
+            // Send message to background script to update state
+            chrome.runtime.sendMessage(
+                { 
+                    type: 'SET_FEATURE_STATE', 
+                    enabled: isEnabled 
+                },
+                function(response) {
+                    if (response && response.success) {
+                        console.log('Feature state updated successfully');
+                    }
                 }
-            }
-        );
-
-        // Example: Get data from storage
-        chrome.storage.local.get(['clickCount'], function(result) {
-            const count = (result.clickCount || 0) + 1;
-            chrome.storage.local.set({ clickCount: count }, function() {
-                console.log('Click count:', count);
-            });
+            );
         });
-    });
-
-    // Function to show messages
-    function showMessage(text, type = 'success') {
-        messageDiv.textContent = text;
-        messageDiv.className = `message show ${type}`;
-        
-        setTimeout(() => {
-            messageDiv.classList.remove('show');
-        }, 3000);
     }
-
-    // Load initial data on popup open
-    loadInitialData();
 });
 
-// Load any initial data when popup opens
-function loadInitialData() {
-    chrome.storage.local.get(['clickCount'], function(result) {
-        const count = result.clickCount || 0;
-        console.log('Total clicks so far:', count);
-    });
+
+function loadFeatureState() {
+    chrome.runtime.sendMessage(
+        { type: 'GET_FEATURE_STATE' },
+        function(response) {
+            const toggleCheckbox = document.querySelector('.toggle-checkbox');
+            if (toggleCheckbox && response) {
+                toggleCheckbox.checked = response.enabled ?? false;
+                console.log('Feature state loaded:', response.enabled);
+            }
+        }
+    );
 }
 
-// Listen for messages from background script
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     if (request.action === 'updatePopup') {
         console.log('Received update from background:', request.data);
