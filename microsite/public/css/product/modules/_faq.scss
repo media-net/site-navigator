@@ -1,0 +1,132 @@
+.faq {
+    padding: 80px 0;
+    background-color: #F7FBFF;
+
+    @media (max-width: 1024px) {
+        padding: 40px 0;
+    }
+
+    h2 {
+        margin-bottom: 50px;
+        color: #1C3769;
+        font-family: Roboto;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+
+        @media (max-width: 768px) {
+            margin-bottom: 30px;
+            font-size: 32px;
+            line-height: 48px;
+        }
+    }
+
+    .accordion {
+        overflow: hidden;
+    }
+    
+    .accordion-item {
+        margin-bottom: 16px;
+        border-radius: 8px;
+        border-radius: 16px;
+        border: 1px solid #DDE5ED;
+
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    
+    .accordion-header {
+        display: flex;
+        padding: 36px 24px;
+        justify-content: space-between;
+        align-items: center;
+        align-self: stretch;
+        gap: 15px;
+        cursor: pointer;
+
+        .faq-icons {
+            display: flex;
+            align-items: center;
+        }
+    }
+    
+    .accordion-header .faq-questions-title {
+        color: #1C3769;
+        font-family: Roboto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    
+    .accordion-header .faq-open {
+        display: none;
+    }
+    
+    .accordion-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+        padding: 0 20px;
+        color: #4C5C7A;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px; /* 185.714% */
+        letter-spacing: 0.14px;
+        padding: 0 24px;
+    }
+    
+    .accordion-content ol {
+        padding-left: 24px;
+        margin: 10px 0;
+    }
+    
+    .accordion-content ol li {
+        margin-bottom: 8px;
+    }
+    
+    .accordion-item.active .accordion-content {
+        padding: 0 24px 24px;
+        max-height: none !important;
+        color: #4C5C7A;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px; /* 185.714% */
+        letter-spacing: 0.14px;
+    }
+    
+    .accordion-item.active .faq-close {
+        display: none;
+    }
+    
+    .accordion-item.active .faq-open {
+        display: block;
+    }
+    
+    .accordion-item.active {
+        border-radius: 16px;
+        border: 1px solid #DDE5ED;
+        background: #FFF;
+
+        .faq-questions-title {
+            color: #1C3769;
+            font-family: Roboto;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
+    
+    .accordion-item.active .accordion-header {
+        padding-bottom: 16px;
+    }
+}
