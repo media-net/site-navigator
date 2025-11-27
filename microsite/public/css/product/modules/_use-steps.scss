@@ -1,0 +1,98 @@
+.use-steps {
+    padding: 80px 0;
+
+    @media (max-width: 1024px) {
+        padding: 40px 0;
+    }
+
+    h2 {
+        margin-bottom: 50px;
+        color: #1C3769;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 46px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 64px; /* 139.13% */
+
+        @media (max-width: 540px) {
+            margin-bottom: 30px;
+            font-size: 32px;
+            line-height: 48px;
+        }
+    }
+
+    ul {
+        display: flex;
+
+        @media (max-width: 1024px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        li {
+            width: 32.23%;
+            height: 420px;
+            margin-right: 2.32%;
+            border-radius: 18px;
+            border: 1px solid #E1E9F0;
+            background: #FFF;
+            box-shadow: 0 4px 20px 0 rgba(30, 87, 196, 0.12);
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            @media (max-width: 1024px) {
+                width: 100%;
+                height: auto;
+                padding-bottom: 16px;
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            figure {
+                padding: 14px 0 2px;
+                display: flex;
+                justify-content: center;
+            }
+
+            .content {
+                padding: 0 29px;
+
+                span {
+                    padding: 5px 17px;
+                    border-radius: 70.833px;
+                    display: inline-block;
+                    background: radial-gradient(450% 50% at 50% 51.43%, #2264E1 0%, #12367D 100%);
+                    color: #FFF;
+                    text-align: center;
+                    font-family: Roboto;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    text-transform: uppercase;
+                    border-radius: 70.833px;
+                    background: linear-gradient(90deg, #2264E1 0%, #12367D 100%);                    
+                }
+
+                p {
+                    margin-top: 15px;
+                    color: #1C3769;
+                    font-family: Roboto;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24.556px;
+
+                    @media (max-width: 768px) {
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
