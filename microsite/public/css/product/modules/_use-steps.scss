@@ -1,5 +1,7 @@
 .use-steps {
     padding: 80px 0;
+    background: #F7FBFF url("../../../images/use-bg.png") no-repeat center center;
+    background-size: cover;
 
     @media (max-width: 1024px) {
         padding: 40px 0;
