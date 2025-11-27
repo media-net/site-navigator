@@ -21,6 +21,17 @@
             height: unset;
         }
 
+        @media (max-width: 540px) {
+            padding: 40px 0;
+            height: 400px;
+            width: 84%;
+            background: url(../../../images/smart-search-mobile.png) no-repeat center center;
+            border-top-left-radius: 100px;
+            border-top-right-radius: 12px;
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+        }
+
         h2 {
             margin-bottom: 16px;
             color: #1C3769;
@@ -56,6 +67,11 @@
                 padding: 0 20px;
                 font-size: 16px;
                 line-height: 24px;
+            }
+
+            @media (max-width: 540px) {
+                max-width: 350px;
+                padding: 0 20px;
             }
         }
     }
