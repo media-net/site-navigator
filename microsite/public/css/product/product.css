@@ -131,6 +131,13 @@ header {
   font-weight: 400;
   line-height: 150%; /* 18px */
 }
+.hero .disclaimer p a {
+  color: #4C5C7A;
+  text-decoration: none;
+}
+.hero .disclaimer p a:hover {
+  text-decoration: underline;
+}
 .hero figure img {
   width: 100%;
 }
@@ -172,7 +179,10 @@ header {
   display: flex;
   align-items: center;
   gap: 77px;
-  border-bottom: 2px solid #DEE6EE;
+  border-bottom: 2px solid transparent;
+  -o-border-image: url("../../../images/line-3.png") 2 round;
+     border-image: url("../../../images/line-3.png") 2 round;
+  border-width: 100%;
 }
 @media (max-width: 768px) {
   .feature ul li {
@@ -338,7 +348,7 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 80px 0;
+  padding: 118px 0;
 }
 @media (max-width: 1024px) {
   .about {
@@ -528,6 +538,8 @@ header {
   }
 }
 .faq .accordion {
+  max-width: 980px;
+  margin: 0 auto;
   overflow: hidden;
 }
 .faq .accordion-item {

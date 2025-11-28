@@ -65,6 +65,14 @@
             font-style: normal;
             font-weight: 400;
             line-height: 150%; /* 18px */
+
+            a {
+                color: #4C5C7A;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
         }
     }
 
