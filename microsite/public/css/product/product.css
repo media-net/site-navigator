@@ -311,6 +311,11 @@ header {
 .use-steps ul li figure img {
   width: 100%;
 }
+@media (max-width: 1024px) {
+  .use-steps ul li figure img {
+    max-width: 320px;
+  }
+}
 @media (max-width: 425px) {
   .use-steps ul li figure img {
     width: 100%;
