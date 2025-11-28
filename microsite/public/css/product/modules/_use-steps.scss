@@ -8,7 +8,7 @@
     }
 
     h2 {
-        margin-bottom: 50px;
+        margin-bottom: 76px;
         color: #1C3769;
         text-align: center;
         font-family: Roboto;
@@ -55,9 +55,16 @@
             }
 
             figure {
-                padding: 14px 0 2px;
+                padding: 10px 10px 0;
                 display: flex;
                 justify-content: center;
+
+                img {
+                    width: 100%;
+                    @media (max-width: 425px) {
+                        width: 100%;
+                    }
+                }
             }
 
             .content {

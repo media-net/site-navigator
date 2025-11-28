@@ -256,7 +256,7 @@ header {
   }
 }
 .use-steps h2 {
-  margin-bottom: 50px;
+  margin-bottom: 76px;
   color: #1C3769;
   text-align: center;
   font-family: Roboto;
@@ -304,9 +304,17 @@ header {
   }
 }
 .use-steps ul li figure {
-  padding: 14px 0 2px;
+  padding: 10px 10px 0;
   display: flex;
   justify-content: center;
+}
+.use-steps ul li figure img {
+  width: 100%;
+}
+@media (max-width: 425px) {
+  .use-steps ul li figure img {
+    width: 100%;
+  }
 }
 .use-steps ul li .content {
   padding: 0 29px;
@@ -435,25 +443,27 @@ header {
     padding: 40px 0;
   }
 }
-.smart-search .wrapper {
-  width: 84%;
-  height: 470px;
-  background: url("../../../images/smart-search.png") no-repeat center center;
-  background-size: 100%;
+.smart-search .bg-wrapper {
+  height: 424px;
+  background: url(../../../images/smar-search.png) no-repeat center center;
+  border-radius: 200px 30px 30px 30px;
+  border: 1px solid #DDE5ED;
+  box-shadow: 0 4px 40px 0 rgba(30, 87, 196, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-size: cover;
 }
 @media (max-width: 995px) {
-  .smart-search .wrapper {
+  .smart-search .bg-wrapper {
     padding: 115px 0 116px;
     width: 100%;
     height: unset;
   }
 }
 @media (max-width: 540px) {
-  .smart-search .wrapper {
+  .smart-search .bg-wrapper {
     padding: 40px 0;
     height: 400px;
     width: 84%;
@@ -464,7 +474,7 @@ header {
     border-bottom-right-radius: 12px;
   }
 }
-.smart-search .wrapper h2 {
+.smart-search .bg-wrapper h2 {
   margin-bottom: 16px;
   color: #1C3769;
   text-align: center;
@@ -475,18 +485,18 @@ header {
   line-height: 64px; /* 114.286% */
 }
 @media (max-width: 768px) {
-  .smart-search .wrapper h2 {
+  .smart-search .bg-wrapper h2 {
     font-size: 32px;
     line-height: 48px;
   }
 }
 @media (max-width: 540px) {
-  .smart-search .wrapper h2 {
+  .smart-search .bg-wrapper h2 {
     font-size: 28px;
     line-height: 36px;
   }
 }
-.smart-search .wrapper p {
+.smart-search .bg-wrapper p {
   margin-bottom: 25px;
   color: #4C5C7A;
   text-align: center;
@@ -497,14 +507,14 @@ header {
   line-height: 24px; /* 133.333% */
 }
 @media (max-width: 768px) {
-  .smart-search .wrapper p {
+  .smart-search .bg-wrapper p {
     padding: 0 20px;
     font-size: 16px;
     line-height: 24px;
   }
 }
 @media (max-width: 540px) {
-  .smart-search .wrapper p {
+  .smart-search .bg-wrapper p {
     max-width: 350px;
     padding: 0 20px;
   }

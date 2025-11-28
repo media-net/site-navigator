@@ -5,15 +5,17 @@
         padding: 40px 0;
     }
 
-    .wrapper {
-        width: 84%;
-        height: 470px;
-        background: url("../../../images/smart-search.png") no-repeat center center;
-        background-size: 100%;
+    .bg-wrapper {
+        height: 424px;
+        background: url(../../../images/smar-search.png) no-repeat center center;
+        border-radius: 200px 30px 30px 30px;
+        border: 1px solid #DDE5ED;
+        box-shadow: 0 4px 40px 0 rgba(30, 87, 196, 0.1);
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        background-size: cover;
 
         @media (max-width: 995px) {
             padding: 115px 0 116px;
