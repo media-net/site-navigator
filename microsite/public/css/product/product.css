@@ -285,11 +285,17 @@ header {
 .use-steps ul li {
   width: 32.23%;
   height: 420px;
+  padding-bottom: 20px;
   margin-right: 2.32%;
   border-radius: 18px;
   border: 1px solid #E1E9F0;
   background: #FFF;
   box-shadow: 0 4px 20px 0 rgba(30, 87, 196, 0.12);
+}
+@media (max-width: 1440px) {
+  .use-steps ul li {
+    padding-bottom: 0;
+  }
 }
 .use-steps ul li:last-child {
   margin-right: 0;
