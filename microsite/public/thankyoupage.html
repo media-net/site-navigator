@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Private Search Mode - Thankyou Page</title>
+    <meta name="description"
+        content="Check our Terms of Service for a clear understand of our rules, policies, and your rights as a user.">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.svg" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Inter&display=swap"rel="stylesheet" />
+    <script> !function(e,t,n,s,a,p,c){e[s]||((a=e[s]=function(){a.process?a.process.apply(a,arguments):a.queue.push(arguments)}).queue=[],a.t=+new Date,(p=t.createElement(n)).async=1,p.src="https://feedmob-cdn.s3.amazonaws.com/js/fmpixel.js?t="+864e5*Math.ceil(new Date/864e5),(c=t.getElementsByTagName(n)[0]).parentNode.insertBefore(p,c))}(window,document,"script","fmpix"),fmpix("init","e067e539590949ff817ef9e94878e78c"),fmpix("event","pageload"); </script>
+    <script> fmpix('event', 'I')</script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Inter', Arial, Helvetica, sans-serif;
+            background: #F7FBFF url('./images/ty_bg.png') no-repeat right center;
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            /* min-height: 90vh; */
+            flex: 1;
+        }
+
+        /* Top banner */
+        .banner {
+            position: relative;
+            max-width: 975px;
+            width: 100%;
+            height: 94px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin: 61px auto 0;
+        }
+
+        @media only screen and (max-width: 1024px) {
+            .banner {
+                width: 95%;
+            }
+        }
+
+        .banner-image {
+            position: absolute;
+            width: 100%;
+            z-index: -1;
+        }
+
+        .banner-image-mob {
+            position: absolute;
+            width: 100%;
+            z-index: -1;
+            display: none;
+        }
+
+        .banner-content {
+            display: flex;
+            align-items: center;
+            padding: 0 20px 0 26px;
+            gap: 42px;
+        }
+
+        .banner span {
+            color: #FFF;
+            text-align: center;
+            font-size: 23px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        .banner-content img.dark-logo  { display: none; }
+
+        /* Section Heading */
+        h2 {
+            margin-top: 58px;
+            margin-bottom: 20px;
+            color: #1C3769;
+            text-align: center;
+            font-family: Roboto;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 22px; /* 110% */
+            /* for Firefox */
+        }
+
+        /* Steps Container */
+        .steps {
+            display: flex;
+            justify-content: center;
+            gap: 34px;
+            margin: 0px auto;
+            padding: 0 20px;
+            /* max-width: 968px; */
+        }
+
+        .step {
+            background-color: #fff;
+            border: 1px solid #E1E9F0;
+            box-shadow: 0px 4px 20px 0px #1E57C41F;
+            border-radius: 15px;
+            padding: 20px;
+            flex: 1;
+            min-width: 360px;
+            max-width: 360px;
+            text-align: left;
+        }
+
+        .step h3 {
+            border-radius: 70.833px;
+            background: linear-gradient(90deg, #2264E1 0%, #12367D 100%);
+            margin-bottom: 15px;
+            font-size: 10px;
+            line-height: normal;
+            border: 0.81px solid rgba(248, 250, 252, 0.2);
+            border-radius: 61px;
+            width: 63px;
+            height: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .step img {
+            width: 100%;
+            height: auto;
+            max-width: 302px;
+            margin: 0 auto 3px;
+            display: flex;
+        }
+
+        .step p {
+            color: #1C3769;
+            font-family: Roboto;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24.556px; /* 136.42% */
+        }
+
+        /* Footer */
+        footer {
+            background: #F7FBFF;
+            margin-top: 50px;
+            padding: 23px 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer .desc {
+            margin-bottom: 10px;
+            color: rgba(28, 55, 105, 0.70);
+            text-align: center;
+            font-family: Roboto;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px; /* 166.667% */
+        }
+
+        footer ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px 10px;
+            flex-wrap: wrap;
+            list-style: none;
+        }
+
+        footer a {
+            color: #1C3769;
+            text-align: center;
+            font-family: Roboto;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media only screen and (max-width: 1250px) {
+            .steps {
+                flex-wrap: wrap;
+            }
+        }
+
+        @media only screen and (max-width: 1024px) {
+            .steps {
+                flex-wrap: wrap;
+            }
+
+            .step {
+                min-width: 300px;
+            }
+
+            .logo-banner {
+                max-width: 220px;
+            }
+
+            .banner span {
+                font-size: 20px;
+            }
+        }
+
+        @media only screen and (max-width: 840px) {
+            .logo-banner {
+                max-width: 200px;
+            }
+
+            .banner span {
+                font-size: 18px;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            .banner-image {
+                display: none;
+            }
+
+            .banner-image-mob {
+                display: block;
+            }
+
+            .banner-content {
+                gap: 30px;
+            }
+        }
+
+        @media only screen and (max-width: 690px) {
+            .banner-content img.light-logo { display: none; }
+            .banner-content img.dark-logo { display: block; }
+            .banner span { color: #1C3769; }
+
+            .step {
+                min-width: 100%;
+            }
+
+            .banner {
+                justify-content: center;
+            }
+
+            .banner-image-mob {
+                display: none;
+            }
+
+            .banner-content {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <!-- Top Banner -->
+        <div class="banner">
+            <img src="./images/ty-banner-bg.svg" class="banner-image" alt="Banner">
+            <img src="./images/ty_banner_bg_mob.svg" class="banner-image-mob" alt="Banner">
+            <div class="banner-content">
+                <img src="./images/logo-light.svg" class="logo-banner light-logo" alt="Logo">
+                <img src="./images/logo.svg" class="logo-banner dark-logo" alt="Logo">
+                <span>Extension Installed — Start Your First Search</span>
+            </div>
+            <!-- <div class="banner-inner"> -->
+            <!-- </div> -->
+        </div>
+
+        <!-- Heading -->
+        <h2>How It Works</h2>
+
+        <!-- Steps -->
+        <div class="steps">
+            <!-- Step 1 -->
+            <div class="step">
+                <img src="./images/ty-step1.svg" alt="Step 1">
+                <h3>STEP 1</h3>
+                <p>Click on the puzzle icon on your toolbar and pin the extension.</p>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="step">
+                <img src="./images/ty-step2.svg" alt="Step 2">
+                <h3>STEP 2</h3>
+                <p>Open a site you want to search, then enable Site Navigator.</p>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="step">
+                <img src="./images/ty-step3.svg" alt="Step 3">
+                <h3>STEP 3</h3>
+                <p>Enter a keyword and select the suggested result to show matching pages.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p class="desc">
+            All trademarks, company/service names, and images are property of their owners. No affiliation or
+            endorsement implied.
+        </p>
+        <ul>
+            <li>
+                <a href="./privacypolicy" target="_blank">Privacy Policy</a>
+            </li>
+            <li>
+                <a href="./termsofservice" target="_blank">Terms of Service</a>
+            </li>
+            <li>
+                <a href="./contactus" target="_blank">Contact Us</a>
+            </li>
+            <li>
+                <a href="./uninstall" target="_blank">Uninstall</a>
+            </li>
+            <li>
+                <a href="./datapreferences" target="_blank">Do Not Share My Personal Information</a>
+            </li>
+        </ul>
+    </footer>
+
+    <script>
+        // Completely disable back button on thank you page
+        (function() {
+            'use strict';
+            
+            // Prevent back navigation by manipulating browser history
+            history.pushState(null, null, location.href);
+            
+            // Block all popstate events (back/forward button clicks)
+            window.addEventListener('popstate', function() {
+                history.pushState(null, null, location.href);
+            });
+            
+            // Additional protection: detect page load from cache
+            window.addEventListener('pageshow', function(event) {
+                if (event.persisted) {
+                    // Page was loaded from back/forward cache - reload to prevent stale state
+                    location.reload();
+                }
+            });
+            
+            // Prevent any hash changes that might bypass history blocking
+            window.addEventListener('hashchange', function() {
+                history.pushState(null, null, location.href);
+            });
+            
+            // Extra security: monitor visibility changes
+            document.addEventListener('visibilitychange', function() {
+                if (document.visibilityState === 'visible') {
+                    // Ensure we're still blocking when user returns to tab
+                    history.pushState(null, null, location.href);
+                }
+            });
+        })();
+    </script>
+</body>
+
+</html>
