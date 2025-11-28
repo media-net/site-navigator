@@ -34,7 +34,10 @@
             display: flex;
             align-items: center;
             gap: 77px;
-            border-bottom: 2px solid #DEE6EE;
+            border-bottom: 2px solid transparent;
+            border-image: url("../../../images/line-3.png") 2 round;
+            border-width: 100%;
+            
 
             @media (max-width: 768px) {
                 padding-bottom: 40px;
