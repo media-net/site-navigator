@@ -16,9 +16,10 @@
 .overlay-inner-wrap {
     padding: 20px 30px;
     width: 454px;
-    height: 120px;
+    height: 138px;
     border-radius: 16px;
-    background: linear-gradient(94.63deg, #E1E8FF 13.6%, #FFFFFF 48.58%, #DCFAFE 85.71%);
+    border: 9px solid #B7FB25;
+    background: #FFF;
     display: flex;
     align-items: center;
     justify-content: center;

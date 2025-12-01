@@ -16,9 +16,8 @@
 .overlay-inner-wrap {
     padding: 20px 30px;
     width: 454px;
-    height: 120px;
-    border-radius: 16px;
-    background: linear-gradient(94deg, rgba(247, 251, 255, 0.60) 0.34%, rgba(226, 241, 254, 0.60) 39.15%, rgba(250, 247, 231, 0.60) 63.39%, rgba(247, 251, 255, 0.60) 100%), #F7FBFF;
+    height: 138px;
+    border-radius: 26px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,6 +54,12 @@ p {
 
 .arrow-img {
     position: absolute;
-    bottom: 140px;
-    right: 20px;
+    bottom: 150px;
+    right: -34px;
+}
+
+.arrow-img img {
+    transform: rotate(180deg);
+    width: 141px;
+    height: 141px;
 }
