@@ -58,3 +58,7 @@ p {
     bottom: 140px;
     right: 20px;
 }
+
+.block {
+    display: block;
+}
