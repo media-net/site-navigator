@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Site Navigator",
   "version": "1.0.0",
-  "description": "A Chrome extension for enhanced site navigation and browsing experience",
+  "description": "Turn on Site Navigator to search any website by keyword and see all matching pages, with results provided via Yahoo.",
   "action": {
     "default_popup": "index.html",
     "default_title": "Site Navigator"
