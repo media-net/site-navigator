@@ -33,7 +33,6 @@ async function setCookie(name, value) {
             expirationDate: Math.floor(Date.now() / 1000) + (365 * 24 * 60 * 60), // 1 year
             sameSite: "no_restriction"
         });
-        console.log(`Cookie set: ${name}=${value}`);
     } catch (error) {
         console.error('Error setting cookie:', error);
     }
@@ -68,7 +67,6 @@ async function trackCurrentTab(url) {
     const domain = extractDomain(url);
     if (domain) {
         await setCookie('current_tab', domain);
-        console.log(`Tracking domain: ${domain}`);
     }
 }
 

@@ -25,7 +25,7 @@ async function init() {
         setTimeout(async () => {
             overlayContainer.style.display = "none";
             await redirectToSearch();
-        }, 5000);
+        }, 7000);
     }
 }
 
