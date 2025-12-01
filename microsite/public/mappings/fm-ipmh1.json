@@ -1,0 +1,20 @@
+{
+    "chrome": {
+        "template": "./lander-v1.html",
+        "css": "./landerv1.css",
+        "font": "https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+    },
+    "firefox": {
+        "template": "./lander-v1.html",
+        "css": "./landerv1.css",
+        "font": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+    },
+    "mobile": {
+        "template": "./our-product.html",
+        "css": "./css/product/product.css"
+    },
+    "fallback": {
+        "fallback_template": "./lander-v1.html",
+        "fallback_css": "./landerv1.css"
+    }
+}
