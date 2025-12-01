@@ -7,7 +7,7 @@
 
     .wrapper {
         @media (max-width: 540px) {
-            width: 92%;
+            width: 88%;
         }
     }
 
@@ -50,6 +50,11 @@
             font-style: normal;
             font-weight: 700;
             line-height: 64px; /* 114.286% */
+
+            @media (max-width: 995px) {
+                font-size: 40px;
+                line-height: 48px;
+            }
 
             @media (max-width: 768px) {
                 font-size: 32px;
