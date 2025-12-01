@@ -5,6 +5,12 @@
         padding: 40px 0;
     }
 
+    .wrapper {
+        @media (max-width: 540px) {
+            width: 92%;
+        }
+    }
+
     .bg-wrapper {
         height: 424px;
         background: url(../../../images/smar-search.png) no-repeat center center;
@@ -32,6 +38,7 @@
             border-top-right-radius: 12px;
             border-bottom-left-radius: 12px;
             border-bottom-right-radius: 12px;
+            margin: 0 auto;
         }
 
         h2 {
