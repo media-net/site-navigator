@@ -8,7 +8,7 @@ let checkAttempts = 0;
 let checkInterval = null;
 let windowCheckInterval = null;
 
-const EXTENSION_ID = "fihpdhiickfcaoopfpfkgkjccfhfdgpd"; //  live/local extension ID
+const EXTENSION_ID = "fognonnbfihcdmnabfkgkpojndahbfml"; //  live/local extension ID
 setTimeout(function () {
     // Hide checking compatibility message
     document.querySelector(".checking-msg").style.display = "none";
