@@ -58,6 +58,14 @@ body {
   margin: 0 auto;
 }
 
+.store-btn a:hover {
+  opacity: 0.8;
+}
+
+.chroem-store a:hover {
+  opacity: 0.8;
+}
+
 .container {
   position: relative;
 }
