@@ -22,9 +22,9 @@
     background: #FFF;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 16.29px;
 }
+
+.overlay-inner-wrap figure { margin-right: 16.29px; }
 
 h1 {
     margin-bottom: 8px;

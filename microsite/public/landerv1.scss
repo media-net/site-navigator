@@ -37,10 +37,8 @@
 
 .logo-wrap {
   padding: 17px 0 18px 0;
-  width: 100%;
   position: relative;
   background: #fff;
-  min-height: 56px;
 
   @media (max-width: 1260px) {
     padding-left: 20px;
@@ -63,10 +61,10 @@
   }
 
   .header-desc{
-    color: #192C63;
-    text-align: left;
-    font-family: Inter;
+    color: #1C3769;
+    font-family: Roboto;
     font-size: 12px;
+    font-style: normal;
     font-weight: 400;
     line-height: normal;
     max-width: 460px;
@@ -137,7 +135,7 @@ min-height: 32px;
 
 .comp-success{
     color: #000;
-    font-family: Inter;
+    font-family: 'Roboto';
     font-weight: 700;
     font-style: Bold;
     font-size: 36px;
@@ -249,7 +247,8 @@ p.step-label {
 }
 
 p.step-desc {
-    color: #36364A;
+    color:#1C3769;
+
     font-size: 14px;
     font-weight: 500;
     line-height: 1.2;
@@ -259,18 +258,18 @@ p.step-desc {
 
 /* Step 1 Active */
 ul.step-list.step-1 li:nth-child(1) p.step-label {
-    color: #0B446F;
+    color: #1C3769;
     font-weight: 700;
 }
 
 ul.step-list.step-1 li:nth-child(1) p.step-desc {
-    color: #36364A;
+    color: #1C3769;
     font-weight: 700;
 }
 
 /* Step 2 Active */
 ul.step-list.step-2 li:nth-child(3) p.step-label {
-    color: #0B446F;
+    color: #1C3769;
     font-weight: 700;
 }
 
