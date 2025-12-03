@@ -1,5 +1,5 @@
-const MIXPANEL_CUSTOM_LIB_URL = 'https://t.sitenavigator.co/lib.min.js';
-const MIXPANEL_API_HOST = 'https://t.sitenavigator.co';
+const MIXPANEL_CUSTOM_LIB_URL = 'https://t.privatesearchmode.com/lib.min.js';
+const MIXPANEL_API_HOST = 'https://t.privatesearchmode.com';
 const extensionName = 'sitenavigator';
 const mixpanelCustomProperties = {};
 mixpanelCustomProperties['Extension Name'] = extensionName;

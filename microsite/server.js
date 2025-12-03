@@ -114,6 +114,32 @@ app.post('/api/contactUs', async (req, res) => {
 	});
 });
 
+app.get('/api/proxy/getActivationSourceBucket', async (req, res) => {
+	try {
+		const queryParams = req.query;
+		const queryString = new URLSearchParams(queryParams).toString();
+		const apiUrl = `https://www.checkmyspeednow.com/getActivationSourceBucket?${queryString}`;
+		
+		console.log('Proxying request to:', apiUrl);
+		
+		const response = await axios.get(apiUrl, {
+			headers: {
+				'Referer': 'https://packagetrackonline.com',
+				'User-Agent': req.headers['user-agent'] || 'Mozilla/5.0'
+			}
+		});
+		
+		res.json(response.data);
+	} catch (error) {
+		console.error('Proxy error:', error.message);
+		res.status(error.response?.status || 500).json({
+			success: false,
+			message: 'Error fetching data from external API',
+			error: error.message
+		});
+	}
+});
+
 
 app.use((req, res, next) => {
 	if (req.url.startsWith('/aw-') || req.url.startsWith('/pr-') || req.url.startsWith('/fm-')) {
