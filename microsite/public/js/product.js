@@ -25,7 +25,7 @@ document.querySelectorAll(".accordion-header").forEach((header) => {
 });
 
 
-const continueButtons = document.querySelectorAll('.cta-lander, .cta-button, .atf-cta, .step-cta');
+const continueButtons = document.querySelectorAll('.cta-lander, .cta-button, .atf-cta, .step-cta, .btf-cta');
 
 console.log(`Found ${continueButtons.length} continue button(s)`);
 
