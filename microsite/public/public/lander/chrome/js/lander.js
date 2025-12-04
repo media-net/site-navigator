@@ -188,7 +188,7 @@ function handleContinueClick(event) {
                 if (response && response.installed) {
                     //console.log("Extension detected after clickk✅");
                     clearInterval(pollInterval); // Stop polling
-                    mixpanelTrack('InstallComplete');
+                    //mixpanelTrack('InstallComplete');
                     setTimeout(() => {
                         window.location.replace('/thankyoupage.html');
                     }, 2000);
