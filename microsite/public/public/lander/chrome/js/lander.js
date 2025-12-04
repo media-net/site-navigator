@@ -138,7 +138,7 @@ function checkIfExtensionInstalled() {
             }
             if (response && response.installed) {
                 //console.log("Extension detected ✅");
-                const continueButtons = document.querySelectorAll('.cta-lander, .cta-button, .atf-cta, .cta-btn, .btf-cta');
+                const continueButtons = document.querySelectorAll('.cta-lander, .cta-button, .atf-cta, .cta-btn, .btf-cta, .step-cta');
 
                 continueButtons.forEach(button => {
                     button.textContent = "Already Installed";
