@@ -1,5 +1,4 @@
 const EXTENSION_STORE_URL = 'https://chromewebstore.google.com/detail/site-navigator/fognonnbfihcdmnabfkgkpojndahbfml?hl=en&authuser=1';
-//const LOCAL_EXTENSION_ID = 'jcfogflciihpipeckbmoahpbildclfna'; // Local unpacked extension ID
 const CHECK_INTERVAL = 1000; // Check every second
 const MAX_CHECK_ATTEMPTS = 300; // Stop checking after 5 minutes (300 seconds)
 
@@ -155,7 +154,6 @@ function checkIfExtensionInstalled() {
     }
 }
 
-// Check extension status every 2 hours and update cookie if not installed
 checkIfExtensionInstalled();
 
 

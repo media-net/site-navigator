@@ -143,8 +143,16 @@ app.get('/api/proxy/getActivationSourceBucket', async (req, res) => {
 
 app.use((req, res, next) => {
 	if (req.url.startsWith('/aw-') || req.url.startsWith('/pr-') || req.url.startsWith('/fm-')) {
-		let htmlFilePath = path.join(__dirname, 'public', 'spa.html');
-		callPath(req, res, htmlFilePath);
+		const userAgent = req.headers['user-agent'] || '';
+		const isChrome = userAgent.includes('Chrome') && !userAgent.includes('Edg');
+		const isEdge = userAgent.includes('Edg');
+		
+		if (isChrome || isEdge) {
+			let htmlFilePath = path.join(__dirname, 'public', 'spa.html');
+			callPath(req, res, htmlFilePath);
+		} else {
+			res.redirect('https://sitenavigator.co');
+		}
 	} else {
 		return next();
 	}

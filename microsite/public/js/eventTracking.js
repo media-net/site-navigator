@@ -108,6 +108,20 @@ const urlParamKeyValues = {
 	utm_custom5: 'utm_custom5', //To be kept as a buffer
 	//ad1: 'convert_experience_id', //Convert tracking
 	//ad2: 'convert_variation_id'  //Convert tracking
+	ad: "ad",
+	fm_publisher_id: "fm_publisher_id",
+	fm_click_id: "fm_click_id",
+	fm_conversion_id: "fm_conversion_id",
+	utm_medium: "utm_medium",
+	FEEDMOB_VENDOR_NAME: "FEEDMOB_VENDOR_NAME",
+	FEEDMOB_BILLING_METHOD: "FEEDMOB_BILLING_METHOD",
+	feedmob_token: "feedmob_token",
+	creative_id: "creative_id",
+	FEEDMOBVENDORNAME: "FEEDMOBVENDORNAME",
+	FEEDMOB_TOKEN: "FEEDMOB_TOKEN"
+
+
+
 };
 const validKeys = new Set(Object.keys(urlParamKeyValues));
 
